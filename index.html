@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0020)http://btvvotes.org/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="author" content="David Zwarg, Andrew Jennings, Kenny Shepard">
+    <meta name="copyright" content="© 2010 Micah Altman, Michael McDonald">
+    <meta property="og:title" content="DistrictBuilder: Web-based Open Source Software for Collaborative Redistricting">
+    <meta property="og:description" content="Draw your own redistricting plan by visiting the DistrictBuilder website.">
+    <meta property="og:image" content="http://example.com/static-media/images/db_sprite.png">
+
+    <title>Welcome to DistrictBuilder</title>
+    <link rel="shortcut icon" href="http://btvvotes.org/static-media/images/favicon.ico">   
+    <link rel="stylesheet" href="./btvvotes_files/8e02ae311165.css" type="text/css">
+    
+    
+  <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_reset > div{overflow:hidden}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}
+.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}
+.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_fluid span{width:100%}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+.fbpluginrecommendationsbarleft{left:10px}
+.fbpluginrecommendationsbarright{right:10px}</style></head>
+  <body id="static" style="background:#50A6C2;" data-twttr-rendered="true">
+   <div class="static_wrap">
+
+   <div id="static_header" style="padding:10px 0 10px;height:40px;">
+      <div id="site_nav">
+        <ul>
+          <li><a href="http://www.publicmapping.org/">About</a></li>
+          <li>
+            <a class="last" href="mailto:info@geosprocket.com?subject=%5BDistrictBuilder%5D%20Support%20Request">
+              Support
+            </a>
+          </li>
+        
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="banner">
+       <img src="./btvvotes_files/btvvotes_banner2.jpg">
+    </div>
+
+    <div id="body_box">
+	<div class="alert" style="padding:15px; width:100%; background:#1f3184; color:#fff">
+	  <h3><strong>Notice: </strong></h3><p> Many thanks to the dozens of users who have participated in this project. As the city council prepares to vote on a final plan, BTVVotes has shut down and all plans have been archived. </p>
+   	</div> 
+	<hr>
+     <div id="tour_news">
+        <div id="news">
+          <h3>Resources</h3>
+          <ul>
+	    <li><a href="http://youtu.be/Yhy1X8P178c" target="_blank">Quick Start Tutorial</a></li>
+            <li><a href="http://www.publicmapping.org/user-guide/user-guide-verison-1-2" target="_blank">Full User Guide</a></li>
+            <li><a href="http://burlingtonvt.gov/CityCouncil/Ward-Redistricting/How-To-Redistrict/" target="_blank">Burlington Redistricting Guidelines</a></li>
+            <li><a href="http://www.publicmapping.org/resources/state-resources/vermont/" target="_blank">
+                Vermont on the Public Mapping Project</a></li>
+            <li><a href="http://burlingtonvt.gov/">
+                Burlington Homepage</a></li>
+          </ul>
+        </div>
+
+        <ul class="share-buttons">
+          <li class="twitter-tweet">
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./btvvotes_files/tweet_button.1387492107.html" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe>
+            <script type="text/javascript" src="./btvvotes_files/widgets.js"></script>
+          </li>   
+
+          <li class="facebook-like">
+            <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="./btvvotes_files/xd_arbiter.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="./btvvotes_files/xd_arbiter(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+            <script src="./btvvotes_files/all.js"></script>
+            <fb:like width="90" show_faces="false" action="like" layout="button_count" fb-xfbml-state="rendered" class="fb_edge_widget_with_comment fb_iframe_widget"><span style="height: 20px; width: 76px;"><iframe id="f163794f88" name="f12b2cd53c" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="./btvvotes_files/like.html" style="border: none; overflow: hidden; height: 20px; width: 76px;"></iframe></span></fb:like>
+          </li>
+
+          <li class="google-plusone">
+            <script type="text/javascript" src="./btvvotes_files/plusone.js" gapi_processed="true"></script>
+            <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1388087717542" name="I0_1388087717542" src="./btvvotes_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+          </li>
+        </ul>
+
+      </div>
+
+      <!--<div id="user">
+
+        <div id="login">
+          <form action="http://btvvotes.org/accounts/login/" method="post">
+            <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="rUsHbRo6hReuUdq2LVFInVsiUReNaShX"></div>
+            <input type="hidden" name="next" value="/districtmapping/plan/0/view/">
+            <h3>Log In</h3>
+<input id="username" name="username">
+<input id="passphrase" type="password">
+<input id="password" name="password" type="hidden">
+<button id="login" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Login</span></button>
+          </form>
+<p><a href="http://btvvotes.org/#" onclick="$(&#39;#forgotpass&#39;).dialog(&#39;open&#39;);">Forgot your password?</a></p>
+
+          </div>
+
+        <div id="signup">
+          <h3>Don't have an account?</h3>
+
+          <h4>To Draw Your Own Maps...</h4>
+
+		<button onclick="$(&#39;#register&#39;).dialog(&#39;open&#39;);" id="sign_up" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sign Up</span></button>
+
+          <h4>To View Other Users' Maps...</h4>
+
+            <form id="anonymousForm" action="http://btvvotes.org/accounts/register/" method="post">
+              <button id="doAnonymous" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Enter as a guest</span></button>
+
+            </form>
+
+            <p>
+            <a href="http://btvvotes.org/#" onclick="$(&#39;#privacy&#39;).dialog(&#39;open&#39;);">Terms of Use</a>
+            </p>
+
+
+        </div>
+        <div class="clear_left"></div>
+      </div>-->
+    </div>
+    
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <div id="footer">
+      <!-- Uncomment to display Creative Commons License-->
+      <div class="attribution">
+        <a class="logoLeft" rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="./btvvotes_files/88x31.png">
+        </a>
+      </div>
+      
+
+      
+      <div class="attribution">
+        <!-- Keep this on one line to avoid an underscore in Chrome -->
+        <a target="_blank" href="http://www.districtbuilder.org/"><img alt="Powered By DistrictBuilder" src="./btvvotes_files/db_sprite.png"></a>
+        <br>
+        <span id="poweredbytext">
+          A project of
+          <a target="_blank" href="http://www.publicmapping.org/">PublicMapping.org</a>
+        </span>
+      </div>
+      
+
+      <!--<div id="sponsors">
+        <a target="_blank" class="logoRight" href="http://www.mozilla.com/?from=sfx&amp;uid=0&amp;t=306">
+          <img border="0" src="http://sfx-images.mozilla.org/affiliates/Buttons/firefox3/110x32_get_ffx.png"
+               alt="Spread Firefox Affiliate Button">
+        </a>
+        <p> 
+            We've designed the software to run on <a target="_blank" href="http://www.mozilla.com/?from=sfx&amp;uid=0&amp;t=306">Mozilla Firefox</a> - a free web browser
+        </p>
+      </div>-->
+    </div>
+
+    </div>
+    <script type="text/javascript" src="./btvvotes_files/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="./btvvotes_files/saved_resource"></script>    
+    <script type="text/javascript" src="./btvvotes_files/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="./btvvotes_files/jquery.bgiframe-2.1.1.js"></script>
+    <script type="text/javascript" src="./btvvotes_files/jquery.tools.tooltip.slide.min.js"></script>
+    <script type="text/javascript" src="./btvvotes_files/ui.js"></script>
+    <script type="text/javascript" src="./btvvotes_files/register.js"></script>
+    <script type="text/javascript" src="./btvvotes_files/sha1.js"></script>
+    <script type="text/javascript">
+      $('button#login').click(function(event){
+          var un = $('#username'),
+              pp = $('#passphrase'),
+              pw = $('#password');
+
+          $('#username, #passphrase').removeClass('error');
+       
+          if ($.trim(un.val()) == '' || $.trim(pp.val()) == '') {
+              $('<div class="error">Please enter user name and password.</div>').dialog({
+                  modal:true,
+                  width:300,
+                  resizable:false,
+                  title:'Login Error'
+              });
+              if ($.trim(un.val()) == '') {
+                  $('#username').addClass('error');
+              }
+              if ($.trim(pp.val()) == '') {
+                  $('#passphrase').addClass('error');
+              }
+              event.stopPropagation();
+              return false;
+          }
+
+          pw.val( Sha1.hash(pp.val() ) );
+      });
+    </script>
+  
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all register-dialog ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-register" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-register">Sign Up For An Account</span><a href="http://btvvotes.org/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="register" class="ui-dialog-content ui-widget-content" style="display: block;">
+    <form id="registerForm" action="http://btvvotes.org/accounts/register/" method="post">
+
+        <table id="registerTable">
+            <tbody><tr>
+                <td colspan="2"><span id="usernameinstructions" class="recommended">Please choose a username between 6 and 30 characters. Include at least one letter. Do not leave leading or trailing spaces.</span></td>
+            </tr>
+            <tr>
+                <td class="fname">User Name *</td>
+                <td><input id="newusername" name="newusername" class="field" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><span id="passwordinstructions" class="recommended">Please use a password of 8 or more characters. Include a number, a capital letter and a lower-case letter.</span></td>
+            </tr>
+            <tr>
+                <td class="fname">Password *</td>
+                <td><input id="newpassword1" name="newpassword1" type="password" class="field" maxlength="128"></td>
+            </tr>
+            <tr>
+                <td class="fname">Confirm Password *</td>
+                <td><input id="newpassword2" name="newpassword2" type="password" class="field" maxlength="128"></td>
+            </tr>
+            <tr>
+                <td class="fname">Password Hint *</td>
+                <td><input id="passwordhint" name="passwordhint" class="field" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><span class="recommended">An email address is recommended to recover a forgotten password</span></td>
+            </tr>
+            <tr>
+                <td class="fname">Email Address</td>
+                <td><input id="email" name="email" class="field" maxlength="75"><br>
+		<div id="dupemail"><span class="recommended">Sorry, that email address is already registered. Please use a different email address.</span></div></td>
+            </tr>
+            <tr>
+                <td class="fname">First Name</td>
+                <td><input id="firstname" name="firstname" class="field" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td class="fname">Last Name</td>
+                <td><input id="lastname" name="lastname" class="field" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td class="fname">Organization</td>
+                <td><input id="organization" name="organization" class="field" maxlength="30"></td>
+            </tr>
+            
+            <tr id="agreerow">
+                <td></td>
+                <td>
+                    <input id="agree" name="agree" type="checkbox">
+                    <label id="agreelabel" for="agree">
+                        I have read the <a href="http://btvvotes.org/#">Terms of Use</a>
+                    </label>
+                </td>
+
+            </tr>
+            
+            <input type="hidden" id="userid" name="userid" value="">
+        </tbody></table>
+        <div id="signUpButton">
+            
+            <button id="doRegister" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sign Up</span></button>
+            
+        </div>
+        <div id="requiredNote">
+            * Indicates required field
+        </div>
+    </form>
+</div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all register-dialog ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-privacy" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-privacy">Terms of Use</span><a href="http://btvvotes.org/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="privacy" class="ui-dialog-content ui-widget-content" style="display: block;">                <h4 class="first">The following discloses our information gathering and dissemination practices; and terms of use for this web site.</h4>
+        <h4>Information gathering</h4>
+        <ul>
+          <!--<li>Our web server software generates logfiles of the IP addresses of computers that access this web site and of what files they access.</li>
+          <li>These web server logs are retained on a temporary basis and then deleted completely from our systems.</li>-->
+          <li>We may ask our visitors to provide basic information about themselves.</li>
+          <li>We may use cookies to maintain a user's identity between web sessions.</li>
+        </ul>
+        <h4>Contributor Terms</h4>
+        <p>This site enables users to create districting maps and to comment on the maps of others.  By creating a map, a comment, or an account, you are agreeing to the following terms for any map, comment, data, or other content (collectively, 'Contents') you contribute to this site. </p>
+        <!--<p>You hereby grant to us a worldwide, royalty-free, non-exclusive, perpetual, irrevocable license to do any act that is restricted by copyright over anything within the Contents, whether in the original medium or any other. These rights explicitly include commercial use, and do not exclude any field of endeavour. These rights include, without limitation, the right to sublicense the work through multiple tiers of sublicensees. To the extent allowable under applicable local laws and copyright conventions, You also waive and/or agree not to assert against us or our licensees any moral rights that You may have in the Contents.</p>-->
+        <p>We agree to make the Contents that you contribute and designate as "published" available under at least one of the following licenses: ODbL 1.0; DbCL 1.0; CC-BY-SA 2.0; or another free and open license. </p>
+        <h4>Use of information</h4>
+        <!--<p>We use third parties to provide processing functions on our site. When you register for  services, we may share information as necessary for the third party to provide those services.  We make commercially reasonable efforts to ensure that these third parties are prohibited from using your personally identifiable information for any other purpose. </p>
+        <p>We use your IP address and files you access to help diagnose problems with our server and to administer our Web site by identifying (1) which parts of our site are most heavily used, and (2) which portion of our audience comes from different geographical regions. We also use this information to tailor site content to user needs, and to generate aggregate statistical reports. At no time do we disclose site usage by individual visitors.</p>
+        <p>We reserve the right to disclose your personally identifiable information as required by law and when we believe that disclosure is necessary to protect our rights and/or to comply with a judicial proceeding, court order or legal process served on the hosts. </p>
+        --><p>All maps created through the system, edits to those maps, and comments made on those maps are associated with an account id and a timestamp. These maps, comments, account id's and timestamps may be made available to the public.  We may use this information to generate aggregate statistical reports. At no time do we disclose the name, e-mail or other identifying information associated with individual users accounts, unless the individual explicitly selects the "make my account information public" settings in the users profile setting. </p>
+        <h4>Security</h4>
+        <p>This site has security measures in place to protect the loss, misuse and alteration of the information under our control.</p>
+        <h4>Contacting this web site</h4>
+        <p>If you have any questions about this privacy statement, the practices of this site, or your dealings with this site, you can contact the support address at the host domain. This web site may contain links to other web sites. We are not responsible for the privacy practices or the content of such web sites.</p>
+        <h4>Changes to this policy</h4>
+        <p>An announcement of any changes to this policy will be posted on this page for  thirty days before any changes go into effect.</p>
+        <h4>Effective Date</h4>
+        <p>The effective date of this policy was November 1, 2012.</p>
+    </div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all register-dialog ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-forgotpass" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-forgotpass">Forgot Password</span><a href="http://btvvotes.org/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="forgotpass" class="ui-dialog-content ui-widget-content" style="display: block;">
+        <form id="forgotForm" action="http://btvvotes.org/accounts/forgot/" method="POST">
+            <div id="forgotprompt">
+                <div id="username_hint">Get A Hint</div>
+                <div>
+                    Enter your username to retrieve your password hint that you used when registering for an account.
+                </div>
+                <p>&nbsp;</p>
+                <table class="forgotTable">
+                    <tbody><tr>
+                        <td class="fname">Username</td>
+                        <td><input id="forgotusername" name="forgotusername" class="field" maxlength="30"></td>
+                    </tr>
+                </tbody></table>
+                <div id="or">OR</div>
+
+                <div id="email_reset">Reset Your Password</div>
+                <div>
+                    Enter your email address to reset your password if you have forgotten your username.
+                </div>
+                <p>&nbsp;</p>
+                <table class="forgotTable">
+                    <tbody><tr>
+                        <td class="fname">Email</td>
+                        <td><input id="forgotemail" name="forgotemail" class="field"></td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div id="forgotButton">
+                <button id="doRemind" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Begin</span></button>
+            </div>
+
+            <div id="forgothint">
+                <div id="got_hint">Here Is Your Hint</div>
+                <p>If this helps you remember your password, you can close this dialog and log in.</p>
+
+                <input id="forgothintbox" name="forgothintbox" class="field">
+
+                <p>If you still can't recall your password, click on the 'Back' button, and enter your email address, so we can email your password to you.</p>
+
+            </div>
+            <div id="forgotsent">
+                <div id="reset_sent">Email Sent</div>
+                <p>Your password has been emailed to you. You should receive your password in your inbox in the next few minutes.</p>
+            </div>
+            <div id="forgotButton2">
+                <button id="doBack" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Back</span></button>
+                <button id="doClose" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Close</span></button>
+            </div>
+        </form>
+    </div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all register-dialog ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-sessiondupe" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-sessiondupe">Duplicate Session</span><a href="http://btvvotes.org/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="sessiondupe" class="ui-dialog-content ui-widget-content" style="display: block;">
+        <h1>Your account has too many sessions.</h1>
+        <p>To use DistrictBuilder, you must do one of the following actions:</p>
+        <ul>
+            <li>
+                <a href="http://btvvotes.org/#" id="different_login">Log in as a different user.</a>
+            </li>
+            <li>
+                <a href="http://btvvotes.org/accounts/logout/?next=/districtmapping/plan/0/view/">Use the system as a guest.</a>
+            </li>
+            <li>
+                <form method="post" id="purge_form" action="http://btvvotes.org/session/">
+                    <input type="hidden" id="purge_username" name="username" value="">
+                    <a href="http://btvvotes.org/#" id="force_close">Force close the other user's session and log in again.</a>
+                </form>
+            </li>
+        </ul>
+    </div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all register-dialog ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-sessionsmax" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-sessionsmax">Maximum Users Exceeded</span><a href="http://btvvotes.org/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="sessionsmax" class="ui-dialog-content ui-widget-content" style="display: block;">
+        <p>The DistrictBuilder application has reached maximum capacity. Please try to use the application again shortly. We apologize for the inconvenience.</p>
+    </div></div><iframe name="oauth2relay647912951" id="oauth2relay647912951" src="./btvvotes_files/postmessageRelay.html" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
